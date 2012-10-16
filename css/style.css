@@ -1,0 +1,30 @@
+body {
+	background: #999;
+	font-family: Andale Mono;
+	color: #000000;
+}
+
+#console {
+	display: block;
+	background: #D3D3D3;
+	margin: 10px auto;
+	width: 800px;
+	height: 300px;
+	padding: 50px;
+	outline: 0px solid;
+	overflow: auto;
+	white-space: normal;
+	word-wrap: break-word;
+}
+
+#input {
+	background: #D3D3D3;
+	margin: 10px auto;
+	width: 800px;
+	height: 20px;
+	padding: 20px 50px;
+	outline: 0px solid;
+	overflow: auto;
+	white-space: normal;
+	word-wrap: break-word;
+}
