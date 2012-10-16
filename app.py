@@ -16,7 +16,7 @@ my_form = web.form.Form(
 
 @app.route('/')
 def index():
-	return send_from_directory(os.path.join(app.root_path, 'static'), 'index.html')
+	return send_from_directory(os.path.join(app.root_path, 'templates'), 'index.html')
 
 class tutorial:
 	def GET(self):
