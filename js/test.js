@@ -9,20 +9,8 @@ function ProcessInput(){
 	$('#console').append("> " + newinput + '\n'); //add input to textarea
 	$('#console').scrollTop($('#console')[0].scrollHeight); //scroll textarea to bottom
 	$('#input').html(''); //clear input box
-	SendInput(newinput);
 }
 
-function SendInput(contents){
-	$.ajax({
-		url: "/Users/ceciliawatt/Desktop/adventuring/app.py",
-		type: "post",
-		datatype:"text",
-		data: 'hello world',
-		success: function(response){
-			alert(response);
-		}
-	});
-}
 
 /*init*/
 $(document).ready(function(){
