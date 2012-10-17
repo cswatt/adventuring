@@ -1,33 +1,14 @@
-$def with (form, text)
-<!doctype html>
+<!doctype HTML>
+
 <html>
     <head>
-        <title>Hello</title>
-        <link rel="stylesheet" type="text/css" href="/static/style.css" />
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-        <script type="text/javascript">
-            jQuery(document).ready(function() {
-                jQuery(".button").click(function() {
-                    var input_string = $$("input#textfield").val();
-                    jQuery.ajax({
-                        type: "POST",
-                        data: {textfield : input_string},
-                        success: function(data) {
-                            jQuery('#foo').html(data).hide().fadeIn(1500);
-                        },
-                    });
-                    return false;
-                });
-            });
-        </script>
+        <title> adventuring </title>
+        <link href='css/style.css' rel='stylesheet' type='text/css'>
+        <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+        <script type='text/javascript' src='js/test.js'></script>
     </head>
     <body>
-        <br>
-        <form class="form" method="post">
-        $:form.render()
-        <input class="button" type="submit" value="send"/>
-        </form>
-        <br><br>
-        <span id="foo">$text</span>
+        <textarea id='console'></textarea>
+        <div id='input' contenteditable='true' onkeypress='GetChar(event);'></div>
     </body>
 </html>
