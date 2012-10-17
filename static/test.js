@@ -14,7 +14,7 @@ function ProcessInput(){
 
 function SendInput(contents){
 	$.ajax({
-		url: "/app.py",
+		url: "/story.py",
 		type: "post",
 		datatype:"text",
 		data: 'hello world',
